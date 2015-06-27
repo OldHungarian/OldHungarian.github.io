@@ -84,7 +84,7 @@ html {
 /* line 434, ../bower_components/foundation/scss/foundation/components/_global.scss */
 html,
 body {
-  font-size: 100%;
+  font-size: 22px;
 }
 
 /* line 438, ../bower_components/foundation/scss/foundation/components/_global.scss */
@@ -92,7 +92,7 @@ body {
   background: #fff;
   color: #222;
   cursor: auto;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Web_OldHungarian", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 1.5;
@@ -1709,7 +1709,7 @@ select {
   background: #EFEFEF;
   color: #222222;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Web_OldHungarian", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 1rem;
   padding: 1rem;
 }
@@ -2420,7 +2420,7 @@ button, .button {
   border-style: solid;
   border-width: 0;
   cursor: pointer;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Web_OldHungarian", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -5145,7 +5145,7 @@ kbd {
 /* line 91, ../bower_components/foundation/scss/foundation/components/_labels.scss */
 .label {
   display: inline-block;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Web_OldHungarian", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1;
   margin-bottom: auto;
@@ -5708,7 +5708,7 @@ ul.pagination li {
 .pricing-table .title {
   background-color: #333333;
   color: #EEEEEE;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Web_OldHungarian", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 1rem;
   font-weight: normal;
   padding: 0.9375rem 1.25rem;
@@ -5718,7 +5718,7 @@ ul.pagination li {
 .pricing-table .price {
   background-color: #F6F6F6;
   color: #333333;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Web_OldHungarian", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 2rem;
   font-weight: normal;
   padding: 0.9375rem 1.25rem;
@@ -6079,7 +6079,7 @@ ul.pagination li {
 /* line 118, ../bower_components/foundation/scss/foundation/components/_side-nav.scss */
 .side-nav {
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Web_OldHungarian", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   list-style-position: outside;
   list-style-type: none;
   margin: 0;
@@ -6110,7 +6110,7 @@ ul.pagination li {
 /* line 91, ../bower_components/foundation/scss/foundation/components/_side-nav.scss */
 .side-nav li.active > a:first-child:not(.button) {
   color: #1cc7ff;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Web_OldHungarian", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
 }
 /* line 97, ../bower_components/foundation/scss/foundation/components/_side-nav.scss */
@@ -6296,7 +6296,7 @@ ul.pagination li {
 .sub-nav li {
   color: #999999;
   float: left;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Web_OldHungarian", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 0.875rem;
   font-weight: normal;
   margin-left: 1rem;
@@ -6579,7 +6579,7 @@ table tr td {
   display: block;
   background-color: #EFEFEF;
   color: #222222;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Web_OldHungarian", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 1rem;
   padding: 1rem 2rem;
 }
@@ -7034,7 +7034,7 @@ meta.foundation-mq-topbar {
 .top-bar-section ul li > a {
   color: #FFFFFF;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Web_OldHungarian", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 0.8125rem;
   font-weight: normal;
   padding-left: 0.9375rem;
@@ -7899,7 +7899,7 @@ p aside {
 /* line 252, ../bower_components/foundation/scss/foundation/components/_type.scss */
 h1, h2, h3, h4, h5, h6 {
   color: #222222;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Web_OldHungarian", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 1.4;
@@ -9438,4 +9438,92 @@ th.hide-for-touch {
   .show-for-print {
     display: none !important;
   }
+}
+/* line 6, ../scss/app.scss */
+body {
+  font-variant-ligatures: common-ligatures;
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga" 1;
+  -moz-font-feature-settings: "liga" 1;
+}
+
+/* line 13, ../scss/app.scss */
+.top-wrapper {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background-color: #555555;
+  color: #EFEFEF;
+}
+/* line 19, ../scss/app.scss */
+.top-wrapper h1 {
+  color: #EFEFEF;
+}
+
+/* line 24, ../scss/app.scss */
+.top-converter, footer {
+  background-color: #2980b9;
+  color: #EFEFEF;
+}
+/* line 27, ../scss/app.scss */
+.top-converter h1, .top-converter h2, .top-converter h3, .top-converter h4, .top-converter h5, .top-converter h6, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
+  color: #EFEFEF;
+}
+
+/* line 32, ../scss/app.scss */
+.full-width {
+  max-width: 1400px;
+}
+
+/* line 36, ../scss/app.scss */
+.footer {
+  background-color: #2980b9;
+  padding: 2rem 4rem;
+  text-align: center;
+  color: #EFEFEF;
+}
+/* line 41, ../scss/app.scss */
+.footer i {
+  font-size: 100px;
+}
+
+/* line 47, ../scss/app.scss */
+.footer h4 {
+  color: #EFEFEF;
+  font-size: 1em;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+/* line 54, ../scss/app.scss */
+.footer p, .footer a {
+  font-weight: 300;
+  font-size: .6em;
+  color: #EFEFEF;
+}
+
+@media only screen and (min-width: 40.063em) {
+  /* line 63, ../scss/app.scss */
+  .footer .columns:nth-child(n+2) {
+    border-left: 1px solid #a7a7a7;
+    min-height: 200px;
+  }
+}
+/* line 70, ../scss/app.scss */
+.footer-links {
+  list-style-type: none;
+  margin-left: 0px;
+}
+/* line 72, ../scss/app.scss */
+.footer-links li {
+  margin-top: .5em;
+}
+
+/* line 79, ../scss/app.scss */
+.unicode-table td {
+  padding: 5px;
+}
+
+/* line 85, ../scss/app.scss */
+.system-font * {
+  font-family: sans-serif;
 }
