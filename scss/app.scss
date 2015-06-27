@@ -1,40 +1,88 @@
 @import "settings";
 @import "foundation";
 
-// Or selectively include components
-// @import
-//   "foundation/components/accordion",
-//   "foundation/components/alert-boxes",
-//   "foundation/components/block-grid",
-//   "foundation/components/breadcrumbs",
-//   "foundation/components/button-groups",
-//   "foundation/components/buttons",
-//   "foundation/components/clearing",
-//   "foundation/components/dropdown",
-//   "foundation/components/dropdown-buttons",
-//   "foundation/components/flex-video",
-//   "foundation/components/forms",
-//   "foundation/components/grid",
-//   "foundation/components/inline-lists",
-//   "foundation/components/joyride",
-//   "foundation/components/keystrokes",
-//   "foundation/components/labels",
-//   "foundation/components/magellan",
-//   "foundation/components/orbit",
-//   "foundation/components/pagination",
-//   "foundation/components/panels",
-//   "foundation/components/pricing-tables",
-//   "foundation/components/progress-bars",
-//   "foundation/components/reveal",
-//   "foundation/components/side-nav",
-//   "foundation/components/split-buttons",
-//   "foundation/components/sub-nav",
-//   "foundation/components/switches",
-//   "foundation/components/tables",
-//   "foundation/components/tabs",
-//   "foundation/components/thumbs",
-//   "foundation/components/tooltips",
-//   "foundation/components/top-bar",
-//   "foundation/components/type",
-//   "foundation/components/offcanvas",
-//   "foundation/components/visibility";
+$secondary-background: #2980b9;
+
+body {
+  font-variant-ligatures: common-ligatures;
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga" 1;
+  -moz-font-feature-settings: "liga" 1;
+}
+
+.top-wrapper {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background-color: $charcoal;
+  color: $silver;
+
+  h1 {
+    color: $silver;
+  }
+}
+
+.top-converter, footer {
+  background-color: $secondary-background;
+  color: $silver;
+  h1, h2, h3, h4, h5, h6 {
+    color: $silver;
+  }
+}
+
+.full-width {
+  max-width: 1400px;
+}
+
+.footer {
+  background-color: $secondary-background;
+  padding: 2rem 4rem;
+  text-align: center;
+  color: $silver;
+  i {
+    font-size: 100px;
+  }
+}
+
+.footer {
+  h4 {
+    color: $silver;
+    font-size: 1em;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  p, a {
+    font-weight: 300;
+    font-size: .6em;
+    color: $silver;
+  }
+}
+
+@media only screen and (min-width: 40.063em) {
+.footer {
+  .columns:nth-child(n+2) {
+    border-left: 1px solid scale-color($silver, $lightness: -30%);
+    min-height: 200px;
+  }
+ }
+}
+
+.footer-links {
+  list-style-type: none;
+  li {
+    margin-top: .5em;
+  }
+  margin-left: 0px;
+}
+
+.unicode-table {
+  td {
+    padding: 5px;
+  }
+}
+
+.system-font {
+  * {
+    font-family: sans-serif;
+  }
+}

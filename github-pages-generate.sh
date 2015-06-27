@@ -13,6 +13,7 @@ mkdir -p temp
 cp -a stylesheets temp
 cp -a bower_components temp
 cp -a js temp
+cp -a images temp
 cp *.txt temp
 cp *.html temp
 cp *.md temp
