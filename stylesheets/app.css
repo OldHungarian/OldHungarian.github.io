@@ -9465,28 +9465,33 @@ body {
   color: #EFEFEF;
 }
 /* line 27, ../scss/app.scss */
-.top-converter h1, .top-converter h2, .top-converter h3, .top-converter h4, .top-converter h5, .top-converter h6, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
+.top-converter h1, .top-converter h2, .top-converter h3, .top-converter h4, .top-converter h5, .top-converter h6, .top-converter label, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6, footer label {
   color: #EFEFEF;
 }
 
 /* line 32, ../scss/app.scss */
+.settings-list {
+  list-style-type: none;
+}
+
+/* line 36, ../scss/app.scss */
 .full-width {
   max-width: 1400px;
 }
 
-/* line 36, ../scss/app.scss */
+/* line 40, ../scss/app.scss */
 .footer {
   background-color: #2980b9;
   padding: 2rem 4rem;
   text-align: center;
   color: #EFEFEF;
 }
-/* line 41, ../scss/app.scss */
+/* line 45, ../scss/app.scss */
 .footer i {
   font-size: 100px;
 }
 
-/* line 47, ../scss/app.scss */
+/* line 51, ../scss/app.scss */
 .footer h4 {
   color: #EFEFEF;
   font-size: 1em;
@@ -9494,7 +9499,7 @@ body {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
-/* line 54, ../scss/app.scss */
+/* line 58, ../scss/app.scss */
 .footer p, .footer a {
   font-weight: 300;
   font-size: .6em;
@@ -9502,28 +9507,40 @@ body {
 }
 
 @media only screen and (min-width: 40.063em) {
-  /* line 63, ../scss/app.scss */
+  /* line 67, ../scss/app.scss */
   .footer .columns:nth-child(n+2) {
     border-left: 1px solid #a7a7a7;
     min-height: 200px;
   }
 }
-/* line 70, ../scss/app.scss */
+/* line 74, ../scss/app.scss */
 .footer-links {
   list-style-type: none;
   margin-left: 0px;
 }
-/* line 72, ../scss/app.scss */
+/* line 76, ../scss/app.scss */
 .footer-links li {
   margin-top: .5em;
 }
 
-/* line 79, ../scss/app.scss */
+/* line 83, ../scss/app.scss */
 .unicode-table td {
   padding: 5px;
 }
 
-/* line 85, ../scss/app.scss */
+/* line 89, ../scss/app.scss */
 .system-font * {
   font-family: sans-serif;
+}
+
+/* line 94, ../scss/app.scss */
+.force-rtl {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+/* line 99, ../scss/app.scss */
+.force-ltr {
+  direction: ltr;
+  unicode-bidi: bidi-override;
 }

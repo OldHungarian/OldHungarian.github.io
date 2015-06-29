@@ -20,7 +20,7 @@
     <div class="top-wrapper">
       <div class="row">
         <div class="large-12 large-centered columns">
-          <h1>‮𐲛𐳖𐳇 𐲏𐳪𐳙𐳍𐳀𐳢𐳐𐳀𐳙‭</h1>
+          <h1 class="force-rtl">𐲛𐳖𐳇 𐲏𐳪𐳙𐳍𐳀𐳢𐳐𐳀𐳙</h1>
           <p>The Old Hungarian script is an alphabetic, runiform script used to write the Hungarian language
             which is also in current use by a considerable community. Unicode support for the script was added
             in Unicode version 8.0. This website contains various resources and tools to support the usage of
@@ -46,10 +46,15 @@
             <div class="large-5 columns end">
               <h3>Old Hungarian</h3>
               <p>
-                <textarea rows="10" id="converter-old-hungarian"></textarea>
+                <textarea rows="10" id="converter-old-hungarian" class="force-rtl"></textarea>
               </p>
             </div>
           </div>
+          <h3>Settings</h3>
+          <ul class="settings-list">
+            <li><label><input type="checkbox" id="converter-settings-use-ligatures" name="use-ligatures" checked="checked"> Use Ligatures</label></li>
+            <li><label><input type="checkbox" id="converter-settings-ltr-mode" name="ltr-mode"> Write left-to-right</label></li>
+          </ul>
         </div>
       </div>
     </div>
@@ -59,7 +64,8 @@
         <h3 id="font">Font</h3>
         <p>You can download and install the font locally that is used on this page <a href="https://github.com/OldHungarian/old-hungarian-font/releases">from GitHub</a>.
           After downloading the <code>OldHungarian.zip</code> file, extract it, and install the appropriate font for your machine.</p>
-        <p>The font contains all defined Unicode 8.0 glyphs in the U+10C80 - U+10CFF range, and some common contemporary ligatures, including <em>dz</em>, <em>dzs</em>, <em>q</em>, <em>w</em>, <em>x</em>, and <em>y</em></p>
+        <p>The font contains all defined Unicode 8.0 glyphs in the U+10C80 - U+10CFF range, and some common contemporary ligatures, including <em>dz</em> (𐲇‍𐲯), <em>dzs</em> (𐲇‍𐲰),
+          <em>q</em> (𐲓‍𐲮), <em>w</em> (𐲮‍𐲮), <em>x</em> (𐲓‍𐲥), and <em>y</em> (𐲒‍𐲐), and the non-standard representation of the numeral 500 (𐳻‍𐳾)</p>
 
         <h3 id="web-usage">Web usage</h3>
         <p>If you want to include Old Hungarian scripts on your webpage, either download the font package, and use it locally using the CSS <code>@font-face</code>
@@ -88,7 +94,7 @@
 
           <h3 id="test">Test</h3>
 
-          <p>To test whether your system and/or browser supports Old Hungarian please check the following tables, where the expected and actual values should always look similarly.</p>
+          <p>To test whether your system and/or browser supports Old Hungarian please check the following tables, where the expected and actual values should always look similar.</p>
 
           <div class="row">
             <div class="large-10 large-centered columns">
@@ -622,11 +628,11 @@
                       </tr>
                       <tr>
                         <td>Forced RTL mode</td>
-                        <td title="Forced RTL mode">TEST: <span style="direction: rtl; unicode-bidi:bidi-override;">𐲦𐲉𐲤𐲦!</span> TEST?</td>
+                        <td title="Forced RTL mode">TEST: <span class="force-rtl">𐲦𐲉𐲤𐲦!</span> TEST?</td>
                       </tr>
                       <tr>
                         <td>Forced LTR mode</td>
-                        <td title="Forced LTR mode">TEST: <span style="direction: ltr; unicode-bidi:bidi-override;">𐲦𐲉𐲤𐲦!</span> TEST?</td>
+                        <td title="Forced LTR mode">TEST: <span class="force-ltr">𐲦𐲉𐲤𐲦!</span> TEST?</td>
                       </tr>
                     </tbody>
                   </table>
@@ -655,11 +661,11 @@
                       </tr>
                       <tr>
                         <td>Forced RTL mode</td>
-                        <td title="Forced RTL mode">TEST: <span style="direction: rtl; unicode-bidi:bidi-override;">𐲦𐲉𐲤𐲦!</span> TEST?</td>
+                        <td title="Forced RTL mode">TEST: <span class="force-rtl">𐲦𐲉𐲤𐲦!</span> TEST?</td>
                       </tr>
                       <tr>
                         <td>Forced LTR mode</td>
-                        <td title="Forced LTR mode">TEST: <span style="direction: ltr; unicode-bidi:bidi-override;">𐲦𐲉𐲤𐲦!</span> TEST?</td>
+                        <td title="Forced LTR mode">TEST: <span class="force-ltr">𐲦𐲉𐲤𐲦!</span> TEST?</td>
                       </tr>
                     </tbody>
                   </table>
