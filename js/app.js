@@ -117,9 +117,12 @@ $(function() {
     ['ent','𐳱',0,1],
     ['us','𐳲',0,1],
 
-    /*
     ['DZ','𐲇‍𐲯',2,2],
+    ['Dz','𐲇‍𐲯',2,0],
     ['DZS','𐲇‍𐲰',3,2],
+    ['DzS','𐲇‍𐲰',3,0],
+    ['DZs','𐲇‍𐲰',3,0],
+    ['Dzs','𐲇‍𐲰',3,0],
     ['Q','𐲓‍𐲮',1,2],
     ['W','𐲮‍𐲮',1,2],
     ['X','𐲓‍𐲥',1,2],
@@ -129,17 +132,17 @@ $(function() {
     ['q','𐳓‍𐳮',1,2],
     ['w','𐳮‍𐳮',1,2],
     ['x','𐳓‍𐳥',1,2],
-    ['y','𐳒‍𐳐',1,2], TODO: try to figure out why ligatures don't work properly with RTL settings*/
+    ['y','𐳒‍𐳐',1,2],
 
-    [':',':\u200f',1,0],
-    ['\\.','.\u200f',1,0],
-    ['!','!\u200f',1,0],
+    [':',':\u200f',1,0,{ltr:false}],
+    ['\\.','.\u200f',1,0,{ltr:false}],
+    ['!','!\u200f',1,0,{ltr:false}],
 
-    [',','⹁\u200f',1,0],
-    [';','⁏\u200f',1,0],
-    ['\\?','⸮\u200f',1,0],
-    ['„','⹂\u200f',1,0],
-    ['”','“\u200f',1,0],
+    [',','⹁\u200f',1,0,{ltr:false}],
+    [';','⁏\u200f',1,0,{ltr:false}],
+    ['\\?','⸮\u200f',1,0,{ltr:false}],
+    ['„','⹂\u200f',1,0,{ltr:false}],
+    ['”','“\u200f',1,0,{ltr:false}],
 
     [',','⹁',0,1],
     [';','⁏',0,1],
@@ -157,9 +160,17 @@ $(function() {
     1000: '𐳿'
   };
 
+  var getSettings = function() {
+    var useLtr = $("#converter-settings-ltr-mode").is(':checked');
+    var useLig = $("#converter-settings-use-ligatures").is(':checked');
+
+    return {ltr: useLtr, lig: useLig};
+  }
+
   var convertToOldHungarian = function() {
     var text = $("#converter-latin").val();
     var result = text;
+    var settings = getSettings();
 
     // remove any RTL and LTR override
     result = result.replace(/\u202e/g,'');
@@ -170,20 +181,84 @@ $(function() {
     for (var s = 5; s >= 1; s--) {
       for (var i = 0; i < mapping.length; i++) {
         if (mapping[i][2]==s) {
-          result = result.replace(new RegExp(mapping[i][0],'g'),mapping[i][1]);
+          if (!mapping[i][4] || (!mapping[i][4].ltr && !settings.ltr)) {
+            result = result.replace(new RegExp(mapping[i][0],'g'),mapping[i][1]);
+          }
         }
       }
     }
 
     // convert numbers
-    result.replace(/\d+/,function(match) {
+    result = result.replace(/\d+/g,function(match) {
       var num = +match;
       if (num>=1000000) return match; // we won't handle numbers larger than a million
-      return match; //TODO: fix
+      if (num==0) return match; // we won't handle zero
+
+      var resp = '';
+
+      var thousands = Math.floor(num / 1000);
+      var rest = num % 1000;
+
+      var convertUpToHundred = function(num) {
+        var resp = '';
+        var tens = Math.floor(num / 10);
+        var ones = num % 10;
+
+        if (tens>=5) {
+          resp += numbers[50];
+          tens -= 5;
+        }
+
+        for (var i=0; i<tens; i++) resp += numbers[10];
+
+        if (ones>=5) {
+          resp += numbers[5];
+          ones -= 5;
+        }
+
+        for (var i=0; i<ones; i++) resp += numbers[1];
+
+        return resp;
+      }
+
+      var convertUpToThousand = function(num) {
+        var resp = '';
+        var hundreds = Math.floor(num / 100);
+        var rest = num % 100;
+
+        if (hundreds >= 2) {
+          resp = resp + convertUpToHundred(hundreds) + numbers[100];
+        }
+        if (hundreds == 1) {
+          resp = resp + numbers[100];
+        }
+
+        resp = resp + convertUpToHundred(rest);
+
+        return resp;
+      };
+
+      if (thousands>=2) {
+        resp = resp + convertUpToThousand(thousands) + numbers[1000];
+      }
+      if (thousands == 1) {
+        resp = resp + numbers[1000];
+      }
+
+      resp = resp + convertUpToThousand(rest);
+
+      return resp;
     });
 
-    // add RTL and LTR forcing for compatibility
-    result = result.split('\n').map(function(r){return '\u202e' + r + '\u202d'}).join('\n');
+    if (!settings.lig) {
+      result = result.replace(/\u200d/g,'');
+    }
+
+    if (settings.ltr) {
+      $("#converter-old-hungarian").removeClass("force-rtl").addClass("force-ltr");
+    } else {
+      $("#converter-old-hungarian").removeClass("force-ltr").addClass("force-rtl");
+    }
 
     $("#converter-old-hungarian").val(result);
   };
@@ -212,6 +287,7 @@ $(function() {
 
   $("#converter-latin").on("keyup change",function() { convertToOldHungarian(); });
   $("#converter-old-hungarian").on("keyup change",function() { convertToLatin(); });
+  $("[type=checkbox]").on("change",function() { convertToOldHungarian(); });
 
   convertToOldHungarian();
 });
