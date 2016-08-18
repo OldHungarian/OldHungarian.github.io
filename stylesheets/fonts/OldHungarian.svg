@@ -2,7 +2,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <svg>
 <metadata>
-Created by FontForge 20090622 at Thu Aug 18 14:06:55 2016
+Created by FontForge 20090622 at Thu Aug 18 16:49:43 2016
  By deploy user
 Licenced under the CC-BY-SA 3.0
 
@@ -23,10 +23,10 @@ Reverse comma, and reverse double 9 quote is based on the Symbola font, which is
     panose-1="2 0 5 3 0 0 0 0 0 0"
     ascent="819"
     descent="-205"
-    bbox="0 -372 1024 896"
+    bbox="-96 -195 820.462 944"
     underline-thickness="51"
     underline-position="-102"
-    unicode-range="U+0020-U+10CFF"
+    unicode-range="U+200D-U+10CFF"
   />
 <missing-glyph horiz-adv-x="374" 
 d="M34 0v682h272v-682h-272zM68 34h204v614h-204v-614z" />
@@ -372,19 +372,12 @@ l-139 -225q-7 -11 -25 -16t-37 -1t-27 15.5t-1 22.5l226 364l-226 365q-7 11 1 22t27
     <glyph glyph-name="u10CFF" unicode="&#x10cff;" horiz-adv-x="676" 
 d="M107 390q-19 0 -33 8.5t-14 20.5q0 8 6.5 14.5t17 10.5t23.5 4h163l-207 336q-7 11 1 22t26.5 15t36.5 -1t25 -16l139 -225v213q0 12 14.5 21t34 9t33.5 -9t14 -21v-213l139 225q7 11 25 16t36.5 1t26.5 -15t1 -22l-207 -336h163q13 0 24 -4t17 -10.5t6 -14.5
 q0 -12 -13.5 -20.5t-33.5 -8.5h-163l207 -336q7 -11 -1 -22t-27 -15q-9 -2 -18.5 -2t-18 2.5t-15 6.5t-9.5 10l-139 225v-213q0 -12 -14 -20.5t-33.5 -8.5t-34 8.5t-14.5 20.5v213l-139 -225q-7 -11 -25 -16t-36.5 -1t-26.5 15t-1 22l207 336h-163z" />
-    <glyph glyph-name="u200D" unicode="&#x200d;" horiz-adv-x="1024" 
-d="M128 -128v64h-64v-64h64zM256 -128v64h-64v-64h64zM384 -128v64h-64v-64h64zM512 -128v64h-64v-64h64zM640 -128v64h-64v-64h64zM768 -128v64h-64v-64h64zM896 -128v64h-64v-64h64zM1024 -128v64h-64v-64h64zM1024 0v64h-64v-64h64zM64 64v64h-64v-64h64zM1024 128v64
-h-64v-64h64zM64 192v64h-64v-64h64zM1024 256v64h-64v-64h64zM64 320v64h-64v-64h64zM448 384v64h-192v64h-64v-128h256zM1024 384v64h-64v-64h64zM64 448v64h-64v-64h64zM1024 512v64h-64v-64h64zM64 576v64h-64v-64h64zM1024 640v64h-64v-64h64zM64 704v64h-64v-64h64z
-M1024 768v64h-64v-64h64zM64 832v64h-64v-64h64zM192 832v64h-64v-64h64zM320 832v64h-64v-64h64zM448 832v64h-64v-64h64zM576 832v64h-64v-64h64zM704 832v64h-64v-64h64zM832 832v64h-64v-64h64zM64 -64v64h-64v-64h64zM448 64v-64h128v64h-128zM448 64v128h-64v-128h64z
-M576 64h64v256h-64v-256zM640 448h64v64h-64v256h-64v-384h64v64zM832 448v-64h64v384h-64v-256h-64v-64h64zM256 512h64v64h-64v-64zM704 512h64v128h-64v-128zM320 576h64v64h-64v-64zM384 640h64v128h-256v-64h192v-64zM960 832v64h-64v-64h64z" />
-    <glyph glyph-name="uni2E41" unicode="&#x2e41;" horiz-adv-x="361" 
-d="M297 103q0 -44 -28.5 -73.5t-73.5 -29.5t-78 31q-1 3 -5 6q-4 -8 -4 -23q0 -196 136 -333q23 -22 23 -32q0 -21 -19 -21q-11 0 -40 29q-142 140 -142 345q0 77 27 131q34 71 102 71q44 0 73 -28.5t29 -72.5z" />
-    <glyph glyph-name="uni2E42" unicode="&#x2e42;" horiz-adv-x="735" 
-d="M670 103q0 -44 -28 -73.5t-73 -29.5q-44 0 -77 31q-2 3 -6 6q-4 -8 -4 -23q0 -198 134 -333q24 -23 24 -32q0 -21 -20 -21q-10 0 -38 29q-143 144 -143 345q0 76 27 132q35 70 103 70q44 0 72.5 -28.5t28.5 -72.5zM297 103q0 -44 -29 -73.5t-73 -29.5q-42 0 -77 31
-q-2 3 -7 6q-4 -8 -4 -23q0 -196 136 -333q22 -22 22 -32q0 -21 -18 -21q-11 0 -40 29q-142 142 -142 345q0 76 27 132q34 70 103 70q44 0 73 -28.5t29 -72.5z" />
-    <glyph glyph-name="space" unicode=" " horiz-adv-x="569" 
- />
-    <glyph glyph-name="uni00A0" unicode="&#xa0;" horiz-adv-x="569" 
- />
+    <glyph glyph-name="u200D" unicode="&#x200d;" horiz-adv-x="0" 
+d="M34 846l65 -66l-33 -31l-54 55v-999h-24v997l-52 -53l-32 31l66 66l-66 66l32 32l66 -66l64 66l33 -32z" />
+    <glyph glyph-name="uni2E41" unicode="&#x2e41;" horiz-adv-x="227" 
+d="M176 -121q4 4 5.5 6.5t1.5 7.5q0 3 -2 6.5t-5 6.5q-6 6 -13.5 15t-15.5 21t-15 27t-10 31h4h3q26 0 42.5 17t16.5 45q0 23 -16.5 39.5t-43.5 16.5q-15 0 -26.5 -5.5t-19.5 -15.5t-11.5 -22.5t-4.5 -27.5q0 -22 6.5 -46.5t18.5 -48t29.5 -46t40.5 -42.5z" />
+    <glyph glyph-name="uni2E42" unicode="&#x2e42;" horiz-adv-x="367" 
+d="M60 131q-21 -35 -28.5 -75t-1.5 -78t25 -74q19 -35 51 -63l26 17q8 5 7 12.5t-5 11.5q-13 16 -22 38.5t-12 49t2.5 54.5t21.5 54q6 10 3 18.5t-12 12.5zM212 131q-21 -35 -28.5 -75t-1.5 -78t25 -74q19 -35 51 -63l26 17q8 5 7 12.5t-5 11.5q-13 16 -22 38.5t-12 49
+t2.5 54.5t21.5 54q6 10 3 18.5t-12 12.5z" />
   </font>
 </defs></svg>
