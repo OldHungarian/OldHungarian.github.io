@@ -1,6 +1,6 @@
 # oldhungarian.eu
 
-This is the static webpage repository of [oldhungarian.eu](oldhungarian.eu). It is built using foundation, and the
+This is the static webpage repository of [oldhungarian.eu](http://oldhungarian.eu). It is built using foundation, and the
 source can be found in the `source` branch, while the generated code is put into `master`.
 
 # Building
