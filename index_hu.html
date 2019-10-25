@@ -115,6 +115,10 @@
         <p>Ezeket a ligatúrákat a szabvány értelmében a karakterpár, valamint a <code>U+200D zero width joiner</code> karakter összefésülésével lehet előhívni.
           Tehát például egy olyan betűtípusban, mely támogatja a kortárs ligatúrákat a <code>W</code> szimbólum eléréséhez az alábbiakat kell megadni: <code>U+10C93</code>(V) + <code>U+200D</code> + <code>U+10CA5</code>(V)</p>
 
+        <p>Az 500-as szám jelölésére használt (𐳻‍𐳾) szimbólum bár nem tartozik a szabvány közé, és nem szerepel az Unicode szabvány ligatúra ajánlásai között sem, ebben a betűkészletben a
+          <code>U+10CFB</code>(5) + <code>U+200D</code> + <code>U+10CFE</code>(100) sorozattal elérhető.
+          Mivel ez nem szabványos más Unicode szabványnak megfelelő betűtípusok nem biztos, hogy ezt a szimbólumot támogatják, illetve ha mégis, akkor nem biztos, hogy ugyanezzel a kódsorozattal.</p>
+
         <h3 id="test">Teszt</h3>
 
         <p>Az alábbiakban letesztelheti, hogy böngészője, illetve operációs rendszere helyesen kezeli-e rovásírást. A teszthez hasonlítsa össze az Aktuális, valamint az Elvárt oszlop tartalmát,
@@ -530,6 +534,7 @@
                       <td title="U+10CEE + U+200D + U+10CEE: OLD HUNGARIAN SMALL LETTER W LIGATURE (V+V)">𐳮‍𐳮</td>
                       <td title="U+10CD3 + U+200D + U+10CE5: OLD HUNGARIAN SMALL LETTER X LIGATURE (K+SZ)">𐳓‍𐳥</td>
                       <td title="U+10CD2 + U+200D + U+10CD0: OLD HUNGARIAN SMALL LETTER Y LIGATURE (J+I)">𐳒‍𐳐</td>
+                      <td title="U+10CFB + U+200D + U+10CFE: OLD HUNGARIAN NUMBER FIVE HUNDRED (5+100) /non-standard/">𐳻‍𐳾</td>
                     </tr>
                     <tr>
                       <td>Jobbról-balra írt</td>
@@ -545,6 +550,7 @@
                       <td title="U+10CEE + U+200D + U+10CEE: OLD HUNGARIAN SMALL LETTER W LIGATURE (V+V)">&#x202e;𐳮‍𐳮</td>
                       <td title="U+10CD3 + U+200D + U+10CE5: OLD HUNGARIAN SMALL LETTER X LIGATURE (K+SZ)">&#x202e;𐳓‍𐳥</td>
                       <td title="U+10CD2 + U+200D + U+10CD0: OLD HUNGARIAN SMALL LETTER Y LIGATURE (J+I)">&#x202e;𐳒‍𐳐</td>
+                      <td title="U+10CFB + U+200D + U+10CFE: OLD HUNGARIAN NUMBER FIVE HUNDRED (5+100) /non-standard/">&#x202e;𐳻‍𐳾</td>
                     </tr>
                     <tr>
                       <td>Balról-jobbra írt</td>
@@ -560,12 +566,13 @@
                       <td title="U+10CEE + U+200D + U+10CEE: OLD HUNGARIAN SMALL LETTER W LIGATURE (V+V)">&#x202d;𐳮‍𐳮</td>
                       <td title="U+10CD3 + U+200D + U+10CE5: OLD HUNGARIAN SMALL LETTER X LIGATURE (K+SZ)">&#x202d;𐳓‍𐳥</td>
                       <td title="U+10CD2 + U+200D + U+10CD0: OLD HUNGARIAN SMALL LETTER Y LIGATURE (J+I)">&#x202d;𐳒‍𐳐</td>
+                      <td title="U+10CFB + U+200D + U+10CFE: OLD HUNGARIAN NUMBER FIVE HUNDRED (5+100) - non-standard">&#x202d;𐳻‍𐳾</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
               <div class="large-6 columns end">
-                <img src="images/ligature_table.png" />
+                <img src="images/ligature_table_hu.png" />
               </div>
             </div>
           </div>
@@ -593,6 +600,7 @@
                       <td title="U+10CEE + U+200D + U+10CEE: OLD HUNGARIAN SMALL LETTER W LIGATURE (V+V)">𐳮‍𐳮</td>
                       <td title="U+10CD3 + U+200D + U+10CE5: OLD HUNGARIAN SMALL LETTER X LIGATURE (K+SZ)">𐳓‍𐳥</td>
                       <td title="U+10CD2 + U+200D + U+10CD0: OLD HUNGARIAN SMALL LETTER Y LIGATURE (J+I)">𐳒‍𐳐</td>
+                      <td title="U+10CFB + U+200D + U+10CFE: OLD HUNGARIAN NUMBER FIVE HUNDRED (5+100) - non-standard">𐳻‍𐳾</td>
                     </tr>
                     <tr>
                       <td>Jobbról-balra írt</td>
@@ -608,6 +616,7 @@
                       <td title="U+10CEE + U+200D + U+10CEE: OLD HUNGARIAN SMALL LETTER W LIGATURE (V+V)">&#x202e;𐳮‍𐳮</td>
                       <td title="U+10CD3 + U+200D + U+10CE5: OLD HUNGARIAN SMALL LETTER X LIGATURE (K+SZ)">&#x202e;𐳓‍𐳥</td>
                       <td title="U+10CD2 + U+200D + U+10CD0: OLD HUNGARIAN SMALL LETTER Y LIGATURE (J+I)">&#x202e;𐳒‍𐳐</td>
+                      <td title="U+10CFB + U+200D + U+10CFE: OLD HUNGARIAN NUMBER FIVE HUNDRED (5+100) - non-standard">&#x202e;𐳻‍𐳾</td>
                     </tr>
                     <tr>
                       <td>Balról-jobbra írt</td>
@@ -623,12 +632,13 @@
                       <td title="U+10CEE + U+200D + U+10CEE: OLD HUNGARIAN SMALL LETTER W LIGATURE (V+V)">&#x202d;𐳮‍𐳮</td>
                       <td title="U+10CD3 + U+200D + U+10CE5: OLD HUNGARIAN SMALL LETTER X LIGATURE (K+SZ)">&#x202d;𐳓‍𐳥</td>
                       <td title="U+10CD2 + U+200D + U+10CD0: OLD HUNGARIAN SMALL LETTER Y LIGATURE (J+I)">&#x202d;𐳒‍𐳐</td>
+                      <td title="U+10CFB + U+200D + U+10CFE: OLD HUNGARIAN NUMBER FIVE HUNDRED (5+100) - non-standard">&#x202d;𐳻‍𐳾</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
               <div class="large-6 columns end">
-                <img src="images/ligature_table.png" />
+                <img src="images/ligature_table_hu.png" />
               </div>
             </div>
           </div>
@@ -662,7 +672,7 @@
                 </table>
               </div>
               <div class="large-6 columns end">
-                <img src="images/rtl_table.png" />
+                <img src="images/rtl_table_hu.png" />
               </div>
             </div>
           </div>
@@ -695,7 +705,7 @@
                 </table>
               </div>
               <div class="large-6 columns end">
-                <img src="images/rtl_table.png" />
+                <img src="images/rtl_table_hu.png" />
               </div>
             </div>
           </div>
