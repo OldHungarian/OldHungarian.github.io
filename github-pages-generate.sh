@@ -7,7 +7,7 @@ CURRENT_BRANCH=`git rev-parse HEAD`
 rm -rf temp
 
 bower install
-compass compile
+bundle exec compass compile
 
 mkdir -p temp
 cp -a stylesheets temp
