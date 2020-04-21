@@ -19,6 +19,7 @@ cp *.html temp
 cp *.md temp
 cp CNAME temp
 cp LICENSE temp
+cp ads.txt temp
 
 git checkout master
 
